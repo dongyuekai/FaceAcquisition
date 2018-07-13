@@ -5,6 +5,9 @@
  */
 
 import React, { Component } from 'react';
+import Home from './src/pages/IndexPage';
+import { App } from 'autobots-framework';
+import { Nav } from 'autobots-framework';
 import {
   AppRegistry,
   StyleSheet,
@@ -12,33 +15,5 @@ import {
   View
 } from 'react-native';
 
-export default class FaceAcquisition extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>1234</Text>
-      </View>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
-
-AppRegistry.registerComponent('FaceAcquisition', () => FaceAcquisition);
+AppRegistry.registerComponent('FaceAcquisition', () => Home);
+// App.Register({ name: "FaceAcquisition", homeTitle: "", startApp: Home })
