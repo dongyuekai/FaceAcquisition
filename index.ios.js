@@ -7,7 +7,6 @@
 import React, { Component } from 'react';
 import Home from './src/pages/IndexPage';
 import { App } from 'autobots-framework';
-import { Nav } from 'autobots-framework';
 import {
   AppRegistry,
   StyleSheet,
@@ -15,5 +14,5 @@ import {
   View
 } from 'react-native';
 
-AppRegistry.registerComponent('FaceAcquisition', () => Home);
-// App.Register({ name: "FaceAcquisition", homeTitle: "", startApp: Home })
+// AppRegistry.registerComponent('FaceAcquisition', () => Home);
+App.Register({ name: "FaceAcquisition", homeTitle: "", startApp: Home })
